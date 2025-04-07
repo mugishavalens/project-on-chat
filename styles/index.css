@@ -133,9 +133,12 @@ h1{
         flex-direction: row;
         gap: 20px;
     }
+    .part1{
+        width: 100%;
+    }
 
     .text{
-        width: 350px;
+        width: 100%;
         margin-left: 130px;
         margin-top: 60px;
     }
@@ -143,13 +146,12 @@ h1{
         text-align: left;
     }
     h1{
-        margin-left: -70px;
+        margin-left: -40px;
     }
     .screen{
         margin-left: 130px;
     }
     .background{
-      border: 2px solid black;
       height: 500px;
       width: 250px;
       border-radius: 0 0 150px 100px;
