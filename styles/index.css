@@ -2,31 +2,41 @@
   border: 0px;
   margin: 0px;
 }
-
+body{
+    font-family: "rubik";
+}
 .container {
     width: 100%;
     background-color:hsl(270, 20%, 96%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+
 }
 .part1{
     display: flex;
     height: 500px;
+    width: 20rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
 
 .background{
-    background-color: rgb(90, 90, 165);
+    background-color: hsl(276, 55%, 52%);
     height: 400px;
     width: 170px;
     border-radius: 0% 0% 100% 0%;
+
 }
 .screen{
-    position: absolute;
     height: 400px;
     width: 200px;
     border-radius: 20px;
-    margin-left: 60px;
-    margin-top: 60px;
     background-color:  hsl(0, 0%, 100%);
     padding: 8px;
+    box-shadow: 3px 10px 26px rgb(73, 67, 67);
 }
 
 .bck{
@@ -35,15 +45,15 @@
     border-radius: 20px;
 }
 .head{
-    background-color: rgb(90, 90, 165);
+    background-color: hsl(276, 55%, 52%);
     height: 80px;
     border-radius: 20px 20px 8px 8px;
 }
 .cover{
     background-color: white;
-    height: 25px;
-    width: 100px;
-    margin-left: 49px;
+    height: 20px;
+    width: 120px;
+    margin-left: 39px;
     border-radius: 0% 0% 10px 10px;
 }
 .title{
@@ -83,6 +93,8 @@
 .output{
     height: 260px;
     margin-top: 7px;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 .enter{
     display: flex;
@@ -91,7 +103,6 @@
 }
 #txt{
     height: 35px;
-    margin-top: 5px;
     border-radius: 20px;
     width: 190px;
     overflow-y: auto; 
@@ -113,7 +124,6 @@ button{
     flex-direction: column;
     padding: 10px;
     gap: 25px;
-    overflow-y: auto; 
 }
 .para{
     text-align: center;
@@ -126,30 +136,90 @@ h1{
     font-size: 37px;
     color:hsl(271, 36%, 24%);
 }
-
+.centered-text {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+img{
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+}
+.person1{
+    font-size: 8px;
+    border-radius: 10px 10px 10px 0px;
+    background-color: hsl(206, 6%, 79%);
+    color: hsl(293, 100%, 63%);
+    margin-bottom: 5px;
+    width: 120px;
+    padding: 5px;
+}
+.person1b{
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px 10px 10px 0px;
+    background-color: hsl(276, 55%, 52%);
+    color: white;
+    display: flex;
+    margin-bottom: 5px;
+}
+.p1{
+    width: 110px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 30px;
+}
+.cicle{
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+.p2{
+    width: 30px;
+    display: flex;
+    align-items: center;
+}
+.person2{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    padding: 10px;
+}
 @media(min-width: 760px){
     .container{
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        align-items: center;
+        justify-content: start;
     }
     .part1{
-        width: 100%;
+        position:unset;
+        width: 300px;
+        justify-content: flex-start;
+    }
+    h1{
+        width: 257px;
+        font-size: 26px;
+
+    }
+    .para{
+        font-size: 14px;
+    }
+    .screen{
+        width: 200px;
     }
 
     .text{
-        width: 100%;
-        margin-left: 130px;
-        margin-top: 60px;
+        width: 350px;
+        height: 200px;
+        padding: 10px;
     }
     .para{
         text-align: left;
-    }
-    h1{
-        margin-left: -40px;
-    }
-    .screen{
-        margin-left: 130px;
     }
     .background{
       height: 500px;
